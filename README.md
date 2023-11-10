@@ -133,11 +133,3 @@ The controller is represented by the Flask application. It handles incoming HTTP
 
 The application uses a relational database with tables for `users` and `expenses`. See the [Database Schema](#database-schema) section for details.
 
-## Contributing
-
-Feel free to contribute to the development of this expense-sharing application. Fork the repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
