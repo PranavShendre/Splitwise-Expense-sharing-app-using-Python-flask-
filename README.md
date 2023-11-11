@@ -131,5 +131,40 @@ The controller is represented by the Flask application. It handles incoming HTTP
 
 ## Database Schema
 
-The application uses a relational database with tables for `users` and `expenses`. See the [Database Schema](#database-schema) section for details.
+The application uses a relational database with tables for `users` and `expenses`.
+# Database Schema
+
+The Expense-Sharing Application uses a relational database with two main tables: `users` and `expenses`.
+
+## `users` Table
+
+| Field     | Type         | Description                       |
+|-----------|--------------|-----------------------------------|
+| user_id   | VARCHAR(50)  | Unique identifier for the user.    |
+| name      | VARCHAR(100) | Name of the user.                  |
+| email     | VARCHAR(255) | Email address of the user.         |
+| mobile    | VARCHAR(20)  | Mobile number of the user.         |
+| balance   | DECIMAL(10,2)| Current balance of the user.       |
+
+## `expenses` Table
+
+| Field           | Type         | Description                                      |
+|-----------------|--------------|--------------------------------------------------|
+| expense_id      | INT          | Unique identifier for the expense.               |
+| payer_id        | VARCHAR(50)  | User ID of the person who paid for the expense.  |
+| amount          | DECIMAL(10,2)| Total amount of the expense.                     |
+| split_type      | VARCHAR(20)  | Type of expense splitting (EQUALLY, PERCENTAGE, SHARE).|
+| expense_name    | VARCHAR(255) | Name or description of the expense.              |
+| notes           | TEXT         | Additional notes related to the expense.        |
+| images          | JSON         | JSON array of image URLs or file paths associated with the expense. |
+| created_at      | TIMESTAMP    | Timestamp indicating when the expense was recorded. |
+
+
+
+
+
+
+
+
+
 
