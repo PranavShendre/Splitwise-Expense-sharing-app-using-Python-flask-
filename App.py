@@ -6,14 +6,15 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
+## Mailing Notification code
+
 # app.Config['MAIL_SERVER'] = 'smtp.gmail.com'
 # app.Config['MAIL_PORT'] = 465
 # app.Config['MAIL_USERNAME'] = 'splitwise@gmail.com'
 # app.Config['MAIL_PASSWORD'] =  'splitwise'
 # app.Config['MAIL_USE_TLS'] = False
 # app.Config['MAIL_USE_SSL'] = True
-
-mail = Mail(app)
+# mail = Mail(app)
 
 # Model
 class User:
@@ -143,6 +144,9 @@ class ExpenseManager:
 
 
 
+
+
+### Controller ###
 
 # Defining API routes or Http endpoints
 
