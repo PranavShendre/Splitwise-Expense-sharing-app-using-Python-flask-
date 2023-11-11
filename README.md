@@ -38,16 +38,16 @@ The controller is represented by the Flask application. It handles incoming HTTP
   - Request Body:
     ```json
     {
-      "user_id": "string",
-      "name": "string",
-      "email": "string",
-      "mobile": "string"
+      "user_id": "u1",
+      "name": "User1",
+      "email": "user1@gmail.com",
+      "mobile": "6543298723"
     }
     ```
   - Response:
     ```json
     {
-      "message": "string"
+      "message": "User Added Successfully!"
     }
     ```
 
@@ -57,11 +57,11 @@ The controller is represented by the Flask application. It handles incoming HTTP
   - Request Body:
     ```json
     {
-      "payer_id": "string",
+      "payer_id": "u1",
       "amount": 1250.0,
-      "participants": ["string"],
+      "participants": ["u1","u2","u3"],
       "split_type": "string" (EQUALLY, PERCENTAGE, SHARE),
-      "expense_name": "string",
+      "expense_name": "Electicity Bill",
       "notes": "string",
       "images": ["string"]
     }
@@ -69,7 +69,7 @@ The controller is represented by the Flask application. It handles incoming HTTP
   - Response:
     ```json
     {
-      "message": "string"
+      "message": "Expense recorded successfully!"
     }
     ```
 
@@ -92,10 +92,10 @@ The controller is represented by the Flask application. It handles incoming HTTP
       "passbook": [
         {
           "expense_id": 1,
-          "expense_name": "string",
-          "payer_id": "string",
+          "expense_name": "Electricity Bill",
+          "payer_id": "u1",
           "amount": 1250.0,
-          "participants": ["string"],
+          "participants": ["u1","u2","u3"],
           "split_type": "string" (EQUALLY, PERCENTAGE, SHARE),
           "notes": "string",
           "images": ["string"]
